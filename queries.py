@@ -15,5 +15,7 @@ def query(q):
         return pd.read_sql_query(text(q), conn)
 
 # Example query
-df = query("SELECT * FROM customers LIMIT 5;")
+df = query("SELECT * FROM online_retail.customers LIMIT 5;")
+print(df)
+df = query("SELECT * FROM online_retail.categories LIMIT 5;")
 print(df)

@@ -11,12 +11,21 @@ df = pd.read_csv("synthetic_online_retail_data 2.csv")
 # Drop rows with missing critical identifiers
 df.dropna(subset=['customer_id', 'product_id', 'category_id', 'price'], inplace=True)
 
+# for customers table, for sex if there is no data we will make it Null
+df['gender'] = df['gender'].apply(lambda x: x if str(x) in ['M', 'F'] else 'Null')
+#df['gender'] = df['gender'].fillna(None)
+
+
 # Ensure quantity > 0
 df = df[df['quantity'] > 0]
 
 # Ensure age in range 18-75
 df = df[(df['age'] >= 18) & (df['age'] <= 75)]
-
+# and in customer the age row if it is missed it should be Null
+df['age'] = df['age'].apply(lambda x: x if 18 <= x <= 75 else Null)
+# and for city the same as well
+#df['city'] = df['city'].apply(lambda x: x if isinstance(x, str) and x.strip() != '' else None)  
+df['city'] = np.random.choice(['New York City', 'Chicago', 'Charleston', 'Las Vegas', 'Seattle', 'Washington DC', 'San Francisco', 'New Orleans', 'Palm Springs', 'San Diego'], size=len(df))
 # Ensure review_score between 1-5 or NaN
 df['review_score'] = df['review_score'].apply(lambda x: x if 1 <= x <= 5 else np.nan)
 
@@ -64,14 +73,15 @@ order_product = df[['order_product_id', 'order_id', 'product_id', 'quantity', 'p
 # Reviews table (nullable review_score)
 reviews = df[['review_id', 'order_product_id', 'review_score']]
 
+
+# Drop rows where review_score is missing
+reviews = reviews.dropna(subset=['review_score'])
+reviews.to_csv("reviews.csv", index=False)
+
 # ----------------------------
 # 4. Save tables as CSV
 # ----------------------------
 customers.to_csv("customers.csv", index=False)
-categories.to_csv("categories.csv", index=False)
-products.to_csv("products.csv", index=False)
-orders_total.to_csv("orders.csv", index=False)
-order_product.to_csv("order_product.csv", index=False)
-reviews.to_csv("reviews.csv", index=False)
+
 
 print("All tables generated and saved successfully!")
