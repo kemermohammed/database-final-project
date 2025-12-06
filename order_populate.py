@@ -35,12 +35,13 @@ execute("TRUNCATE TABLE online_retail.orders RESTART IDENTITY CASCADE;")
 # ------------------------
 # Load CSV
 # ------------------------
-orders_df = pd.read_csv("orders.csv")
+orders_df = pd.read_csv("orders2.csv")
 
 
 # ------------------------
 # Insert data
 # ------------------------
+#orders_df.drop(columns=['order_id'], inplace=True)  # let PostgreSQL handle the ID
 orders_df.to_sql(
     "orders",
     engine,
@@ -49,4 +50,7 @@ orders_df.to_sql(
     index=False
 )
 
+
 print("orders table populated successfully!")
+df = pd.read_sql("SELECT COUNT(*) AS total_rows FROM online_retail.orders;", engine)
+print("Total rows in products table:", df['total_rows'][0])

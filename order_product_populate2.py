@@ -1,3 +1,5 @@
+# CSV columns
+# customer_id, order_date, payment_method, total_amount
 import pandas as pd
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import IntegrityError
@@ -30,27 +32,15 @@ def execute(query):
 # ------------------------
 # Truncate table (optional, for fresh insert)
 # ------------------------
-execute("TRUNCATE TABLE online_retail.customers RESTART IDENTITY CASCADE;")
+execute("TRUNCATE TABLE online_retail.order_product RESTART IDENTITY CASCADE;")
 
-# ------------------------
-# Load CSV
-# ------------------------
-customers_df = pd.read_csv("customers2.csv")
+df = pd.read_csv("order_product2.csv")
 
-# Replace "Null" with real None
-customers_df['gender'] = customers_df['gender'].replace(["Null", "NULL", "null"], None)
-
-# ------------------------
-# Insert data
-# ------------------------
-customers_df.to_sql(
-    "customers",
+df.to_sql(
+    "order_product",
     engine,
-    schema="online_retail",
     if_exists="append",
-    index=False
+    index=False  # do NOT write the DataFrame index as a column
 )
 
-print("Customers table populated successfully!")
-df = pd.read_sql("SELECT COUNT(*) AS total_rows FROM online_retail.customers;", engine)
-print("Total rows in products table:", df['total_rows'][0])
+print("Order_product table populated successfully!")

@@ -26,7 +26,7 @@ def execute(query):
 execute("TRUNCATE TABLE online_retail.products RESTART IDENTITY CASCADE;")  
 
 # Step 2: Load products CSV
-products_df = pd.read_csv("cleaned_products.csv")
+products_df = pd.read_csv("cleaned_products3.csv")
 
 
 # Step 3: Insert into products table
@@ -39,3 +39,6 @@ products_df.to_sql(
 )
 
 print("Products table populated successfully!")
+# Query the table and count rows
+df = pd.read_sql("SELECT COUNT(*) AS total_rows FROM online_retail.products;", engine)
+print("Total rows in products table:", df['total_rows'][0])

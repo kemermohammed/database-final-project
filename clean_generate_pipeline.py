@@ -76,7 +76,7 @@ reviews = df[['review_id', 'order_product_id', 'review_score']]
 
 # Drop rows where review_score is missing
 reviews = reviews.dropna(subset=['review_score'])
-reviews.to_csv("reviews.csv", index=False)
+#reviews.to_csv("reviews.csv", index=False)
 
 # ----------------------------
 # 4. Save tables as CSV

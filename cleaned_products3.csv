@@ -1,0 +1,604 @@
+product_id,product_name,category_id,price
+645,Eraser,40,229.57
+958,Laptop,10,153.12
+747,Vase,30,168.47
+312,Pants,20,245.65
+761,Pen,40,109.97
+157,Tent,50,60.16
+542,Smartwatch,10,375.27
+369,Pants,20,343.37
+150,Eraser,40,211.29
+158,Shirt,20,91.76
+184,Laptop,10,457.54
+897,Notebook,40,14.47
+820,Pen,40,357.97
+343,Smartwatch,10,240.37
+555,Tent,50,311.86
+172,Carpet,30,415.86
+482,Eraser,40,121.29
+297,Shirt,20,274.1
+951,Pen,40,220.22
+114,Blanket,30,379.26
+766,Tent,50,119.75
+489,Running Shoes,50,236.22
+793,Yoga Mat,50,241.9
+481,Pillow,30,354.83
+329,Eraser,40,348.31
+856,Yoga Mat,50,230.09
+197,Eraser,40,484.93
+749,Notebook,40,334.67
+398,Vase,30,73.19
+836,Notebook,40,233.85
+222,Headphones,10,352.35
+892,Headphones,10,474.75
+186,Pants,20,365.04
+928,T-shirt,20,313.67
+674,Basketball,50,95.99
+217,Dress,20,43.23
+975,Carpet,30,196.7
+468,Notebook,40,408.46
+279,Pillow,30,456.55
+200,Pants,20,17.95
+132,Headphones,10,301.92
+970,Smartwatch,10,332.86
+744,Running Shoes,50,321.04
+707,Laptop,10,257.81
+985,Carpet,30,470.08
+405,Basketball,50,405.54
+941,Headphones,10,213.83
+141,Laptop,10,226.23
+216,Story Book,40,140.73
+204,Basketball,50,93.29
+347,Dress,20,150.51
+264,Tent,50,241.61
+151,Skirt,20,31.41
+684,Story Book,40,107.79
+638,Soccer Ball,50,422.48
+653,Headphones,10,459.77
+950,Yoga Mat,50,346.44
+923,Laptop,10,60.82
+952,Tablet,10,480.79
+554,Eraser,40,299.39
+394,Running Shoes,50,343.76
+180,Carpet,30,127.95
+117,Running Shoes,50,333.05
+493,Blanket,30,29.52
+454,Soccer Ball,50,334.71
+669,Smartphone,10,12.46
+932,T-shirt,20,260.14
+701,Skirt,20,270.32
+675,Painting,30,175.5
+409,Running Shoes,50,333.66
+837,Basketball,50,487.21
+775,Basketball,50,367.94
+466,Tent,50,397.46
+426,Tablet,10,458.08
+196,Carpet,30,217.55
+955,Skirt,20,457.29
+460,Tent,50,150.37
+961,Painting,30,228.55
+162,Novel,40,69.76
+522,Dress,20,162.83
+135,T-shirt,20,39.22
+586,Notebook,40,395.01
+101,Headphones,10,49.31
+529,Notebook,40,152.81
+839,Shirt,20,265.34
+592,Basketball,50,340.27
+855,Yoga Mat,50,341.18
+322,Basketball,50,24.0
+560,Notebook,40,124.91
+182,Tent,50,266.16
+471,Eraser,40,149.61
+713,Skirt,20,88.02
+229,Smartphone,10,231.51
+539,Tent,50,99.16
+128,Pants,20,255.32
+241,Headphones,10,302.59
+611,Skirt,20,124.01
+465,Yoga Mat,50,350.15
+667,Vase,30,478.17
+918,Running Shoes,50,237.79
+530,Soccer Ball,50,228.76
+716,Tablet,10,433.99
+351,Carpet,30,247.45
+732,Shirt,20,380.08
+261,Soccer Ball,50,332.25
+146,Tablet,10,184.27
+221,Headphones,10,306.53
+400,Pen,40,389.49
+888,Laptop,10,26.2
+325,Dress,20,156.87
+893,Shirt,20,316.41
+738,Smartwatch,10,193.09
+828,Tent,50,395.78
+748,Smartwatch,10,301.1
+108,Soccer Ball,50,283.81
+436,Smartwatch,10,478.75
+626,Eraser,40,117.09
+410,Basketball,50,37.87
+798,Soccer Ball,50,301.66
+722,Eraser,40,215.13
+922,Painting,30,157.95
+557,Pillow,30,116.13
+292,Notebook,40,458.02
+362,Vase,30,307.04
+237,Running Shoes,50,101.82
+693,Blanket,30,286.34
+880,Smartphone,10,162.38
+360,Tent,50,55.78
+943,Pen,40,443.49
+206,Tent,50,22.86
+533,Yoga Mat,50,28.75
+677,Tent,50,409.85
+978,Laptop,10,127.53
+335,Running Shoes,50,85.58
+183,Yoga Mat,50,105.43
+854,Novel,40,366.14
+606,Notebook,40,336.75
+385,Blanket,30,366.27
+282,Dress,20,467.54
+363,Novel,40,292.74
+953,Basketball,50,220.73
+123,Eraser,40,65.69
+144,Soccer Ball,50,201.32
+470,Smartwatch,10,431.73
+203,Headphones,10,129.35
+461,Blanket,30,38.38
+899,Novel,40,416.12
+682,Novel,40,240.56
+621,Running Shoes,50,34.61
+491,Running Shoes,50,134.12
+704,Novel,40,55.6
+712,Soccer Ball,50,218.49
+688,Eraser,40,44.8
+298,Blanket,30,387.05
+503,Running Shoes,50,66.96
+107,Notebook,40,117.47
+915,Pen,40,341.89
+302,Running Shoes,50,170.43
+327,Shirt,20,499.5
+847,Story Book,40,125.08
+431,Pen,40,328.1
+295,Eraser,40,250.07
+451,Painting,30,87.72
+126,T-shirt,20,323.9
+497,Smartwatch,10,481.95
+314,Dress,20,337.8
+525,Running Shoes,50,100.18
+485,Novel,40,489.21
+188,Tent,50,28.5
+863,Running Shoes,50,174.83
+967,Blanket,30,416.89
+306,Pillow,30,55.63
+486,Yoga Mat,50,431.91
+954,Pillow,30,206.28
+263,Basketball,50,272.22
+610,Carpet,30,212.85
+665,Painting,30,149.85
+139,Story Book,40,108.39
+260,Tent,50,109.06
+672,Tablet,10,295.67
+614,Blanket,30,404.83
+762,Pillow,30,110.55
+511,Smartphone,10,375.59
+931,Tablet,10,439.51
+484,Vase,30,393.51
+721,Novel,40,192.8
+209,Pen,40,12.89
+869,Basketball,50,419.98
+301,Notebook,40,353.19
+170,Skirt,20,394.75
+122,Smartwatch,10,420.63
+568,Dress,20,354.32
+517,Headphones,10,108.34
+912,Pants,20,242.04
+175,Carpet,30,36.36
+220,Notebook,40,266.27
+368,Vase,30,91.58
+648,Dress,20,296.5
+140,Vase,30,139.43
+776,Tablet,10,310.78
+111,Yoga Mat,50,416.93
+802,Tent,50,128.55
+870,Skirt,20,158.05
+294,Pants,20,107.09
+299,Shirt,20,168.65
+799,Yoga Mat,50,348.24
+115,Tent,50,475.89
+663,Yoga Mat,50,286.82
+149,Laptop,10,486.9
+265,Painting,30,217.67
+287,Tent,50,332.47
+395,Headphones,10,191.02
+976,Soccer Ball,50,76.44
+937,Laptop,10,391.58
+505,Soccer Ball,50,222.1
+632,Yoga Mat,50,315.09
+509,Headphones,10,492.35
+876,Blanket,30,97.08
+841,Yoga Mat,50,257.01
+574,Dress,20,216.03
+257,Vase,30,154.72
+113,Running Shoes,50,459.41
+792,Smartphone,10,221.15
+804,Pen,40,106.07
+266,Dress,20,474.27
+411,Carpet,30,245.38
+187,T-shirt,20,248.91
+957,Painting,30,376.19
+490,Soccer Ball,50,179.13
+424,Soccer Ball,50,63.59
+210,Novel,40,334.76
+901,Story Book,40,36.71
+112,Tablet,10,288.22
+635,Painting,30,323.89
+564,Smartphone,10,285.72
+681,Notebook,40,232.24
+159,Vase,30,487.53
+887,Soccer Ball,50,421.14
+463,Vase,30,494.66
+348,Notebook,40,275.88
+889,Tent,50,75.71
+689,Pants,20,125.91
+438,Notebook,40,132.98
+973,Headphones,10,83.17
+755,Basketball,50,323.43
+309,Carpet,30,249.38
+349,Story Book,40,421.85
+538,Eraser,40,266.15
+615,Soccer Ball,50,340.85
+851,Shirt,20,325.23
+226,Story Book,40,428.95
+171,Pants,20,278.91
+447,Painting,30,428.62
+234,Pen,40,176.13
+310,Pen,40,79.66
+457,Tablet,10,196.99
+397,Painting,30,251.63
+960,Tablet,10,356.25
+129,Pants,20,272.83
+361,Dress,20,483.14
+352,Shirt,20,424.55
+826,Eraser,40,67.7
+576,Blanket,30,197.53
+371,Headphones,10,308.07
+643,Smartphone,10,263.87
+246,Pillow,30,320.72
+100,Laptop,10,179.94
+502,Smartwatch,10,370.24
+797,Headphones,10,238.77
+247,Smartphone,10,37.52
+910,Smartphone,10,159.14
+254,Painting,30,169.29
+853,Pillow,30,153.82
+177,Story Book,40,228.81
+636,T-shirt,20,115.08
+315,Blanket,30,307.12
+572,Vase,30,395.04
+842,Shirt,20,273.56
+896,Painting,30,479.12
+633,Headphones,10,272.92
+388,Pen,40,235.81
+868,Carpet,30,55.6
+639,Notebook,40,399.18
+339,Skirt,20,442.3
+137,Blanket,30,220.32
+444,Tablet,10,21.72
+819,Carpet,30,467.51
+520,Laptop,10,462.82
+190,Painting,30,68.79
+992,Headphones,10,228.85
+829,Smartphone,10,196.16
+977,Headphones,10,196.87
+142,Story Book,40,34.64
+852,Vase,30,409.58
+781,Pants,20,460.75
+205,Pants,20,210.55
+651,Pants,20,85.92
+478,Notebook,40,84.68
+136,Soccer Ball,50,88.76
+909,Smartphone,10,89.38
+588,Laptop,10,264.15
+832,Skirt,20,96.31
+374,Novel,40,239.35
+589,Painting,30,231.85
+415,Yoga Mat,50,365.81
+285,Painting,30,481.21
+739,Blanket,30,68.53
+965,Notebook,40,495.24
+629,Dress,20,344.86
+608,Yoga Mat,50,439.96
+567,T-shirt,20,98.87
+563,Pen,40,471.32
+499,Carpet,30,227.39
+510,Story Book,40,427.73
+809,Eraser,40,447.49
+268,T-shirt,20,280.9
+558,Headphones,10,51.1
+320,Dress,20,106.66
+788,Vase,30,22.21
+179,Smartwatch,10,20.84
+860,Skirt,20,145.57
+313,Pen,40,113.24
+173,Basketball,50,432.67
+706,Tablet,10,272.75
+355,Pants,20,433.83
+577,Yoga Mat,50,149.49
+603,Basketball,50,316.74
+323,Dress,20,62.81
+110,Pants,20,416.88
+399,Yoga Mat,50,250.37
+519,Basketball,50,292.66
+480,Notebook,40,353.23
+742,Yoga Mat,50,329.05
+911,Carpet,30,37.52
+380,Pillow,30,302.49
+881,Shirt,20,311.84
+879,Tablet,10,269.42
+521,Running Shoes,50,406.26
+700,Carpet,30,385.88
+244,Shirt,20,333.23
+383,Blanket,30,40.44
+774,Vase,30,82.53
+890,Running Shoes,50,82.41
+646,Pants,20,135.56
+864,Smartwatch,10,466.38
+844,Notebook,40,312.01
+192,Pen,40,46.24
+883,Yoga Mat,50,423.98
+845,Basketball,50,297.33
+439,T-shirt,20,476.53
+317,Laptop,10,213.16
+787,Painting,30,138.17
+427,Tablet,10,227.71
+865,Dress,20,62.97
+994,Smartphone,10,475.31
+428,Pen,40,487.74
+783,Yoga Mat,50,51.74
+575,Eraser,40,27.59
+459,Laptop,10,398.31
+685,Eraser,40,151.94
+248,Dress,20,194.27
+974,Headphones,10,292.12
+547,Notebook,40,397.63
+148,Novel,40,291.22
+375,Eraser,40,25.87
+756,Blanket,30,90.79
+403,Carpet,30,247.25
+964,Pillow,30,32.51
+166,Pants,20,197.69
+420,Smartphone,10,269.41
+939,Carpet,30,325.88
+133,T-shirt,20,54.68
+914,Smartphone,10,291.29
+334,Soccer Ball,50,474.32
+649,Eraser,40,355.78
+750,Soccer Ball,50,96.94
+691,Soccer Ball,50,255.9
+640,Pillow,30,143.03
+770,Story Book,40,143.74
+346,Blanket,30,158.75
+945,Shirt,20,27.65
+840,Story Book,40,20.46
+981,Painting,30,366.42
+536,Laptop,10,87.27
+598,Painting,30,474.04
+293,Basketball,50,361.99
+585,Shirt,20,499.23
+311,Vase,30,306.44
+455,Smartphone,10,156.21
+178,Running Shoes,50,233.12
+759,Story Book,40,371.43
+956,Tablet,10,496.93
+453,Novel,40,392.26
+650,Smartwatch,10,35.52
+537,Novel,40,375.98
+354,Laptop,10,292.09
+232,Basketball,50,408.95
+507,Skirt,20,255.89
+816,Soccer Ball,50,326.55
+874,Painting,30,60.76
+959,Smartphone,10,110.17
+815,Tablet,10,310.7
+622,Headphones,10,325.73
+331,Shirt,20,452.6
+393,Headphones,10,112.93
+549,Smartwatch,10,321.14
+988,Laptop,10,465.66
+569,Pen,40,390.35
+199,Skirt,20,53.77
+125,Basketball,50,117.37
+479,Story Book,40,453.2
+620,T-shirt,20,145.36
+551,Pants,20,360.32
+119,Laptop,10,256.91
+167,Novel,40,126.23
+464,Skirt,20,254.8
+353,Pants,20,272.78
+702,Headphones,10,128.45
+794,Vase,30,100.1
+531,Soccer Ball,50,477.5
+811,Novel,40,60.3
+634,Eraser,40,286.55
+591,T-shirt,20,206.38
+736,Notebook,40,422.39
+664,Pillow,30,308.42
+236,Running Shoes,50,366.17
+501,Basketball,50,456.38
+791,Dress,20,216.69
+784,Smartphone,10,373.36
+734,Shirt,20,361.74
+418,Carpet,30,246.68
+102,Soccer Ball,50,380.42
+719,Yoga Mat,50,39.67
+387,Story Book,40,308.41
+124,Tablet,10,36.1
+291,Shirt,20,98.76
+121,Story Book,40,412.7
+543,Headphones,10,212.77
+714,Skirt,20,329.92
+332,Story Book,40,160.94
+990,Soccer Ball,50,115.36
+642,T-shirt,20,367.65
+631,Story Book,40,309.55
+417,T-shirt,20,181.56
+225,Skirt,20,482.28
+442,Tablet,10,94.6
+556,Tent,50,378.67
+423,Eraser,40,306.66
+822,Yoga Mat,50,236.61
+848,Skirt,20,431.8
+408,Novel,40,436.2
+532,Smartwatch,10,266.04
+695,Skirt,20,66.24
+938,Carpet,30,383.36
+445,Smartphone,10,354.64
+224,Carpet,30,260.52
+472,Yoga Mat,50,213.76
+336,Eraser,40,336.89
+430,Eraser,40,405.65
+843,Tablet,10,57.32
+386,Notebook,40,305.82
+595,Smartphone,10,177.49
+683,Painting,30,404.07
+370,Tent,50,51.53
+858,Story Book,40,374.39
+824,T-shirt,20,227.13
+452,Pants,20,398.91
+818,Smartphone,10,200.44
+658,Laptop,10,43.03
+434,Yoga Mat,50,198.08
+290,Skirt,20,127.78
+995,Notebook,40,115.91
+657,Notebook,40,449.55
+433,Headphones,10,48.94
+319,Pants,20,11.73
+389,Eraser,40,385.37
+579,Soccer Ball,50,145.86
+678,Smartphone,10,184.2
+983,Pants,20,419.8
+545,Running Shoes,50,107.84
+971,Tablet,10,91.52
+866,Story Book,40,148.31
+905,Pillow,30,388.0
+318,Pen,40,49.32
+401,Smartwatch,10,340.32
+628,Story Book,40,421.13
+508,Shirt,20,498.66
+660,Dress,20,66.56
+763,Smartphone,10,317.08
+526,Painting,30,19.72
+765,Smartphone,10,447.13
+506,T-shirt,20,72.66
+627,Notebook,40,362.11
+907,Tablet,10,77.37
+898,Running Shoes,50,31.51
+602,T-shirt,20,333.92
+300,Running Shoes,50,266.5
+768,Pillow,30,298.27
+580,Pen,40,378.89
+789,Skirt,20,54.94
+504,Vase,30,240.14
+884,Pillow,30,394.06
+280,Skirt,20,300.18
+661,Running Shoes,50,297.8
+106,Dress,20,87.9
+118,Vase,30,445.11
+735,Pen,40,267.65
+710,Headphones,10,303.16
+757,Carpet,30,274.59
+886,Novel,40,300.03
+619,Pen,40,367.51
+597,Tablet,10,445.82
+773,Shirt,20,153.95
+817,Carpet,30,287.85
+573,Running Shoes,50,85.85
+624,Dress,20,120.07
+535,Tent,50,241.33
+189,T-shirt,20,452.67
+727,Running Shoes,50,498.35
+440,Tent,50,121.5
+275,Headphones,10,330.94
+671,Notebook,40,281.72
+233,Eraser,40,354.85
+680,Basketball,50,237.15
+381,Vase,30,226.48
+782,Soccer Ball,50,285.98
+333,Novel,40,124.08
+359,Tent,50,88.57
+344,Shirt,20,364.91
+500,T-shirt,20,149.72
+308,Blanket,30,228.43
+289,Smartphone,10,207.28
+305,Novel,40,203.94
+105,Story Book,40,307.59
+733,Smartwatch,10,185.4
+513,Yoga Mat,50,212.42
+882,Pillow,30,293.0
+993,Soccer Ball,50,32.2
+259,Dress,20,438.66
+673,Basketball,50,293.67
+212,Skirt,20,337.11
+861,Pen,40,101.29
+806,Tent,50,433.77
+276,Smartwatch,10,188.78
+991,Pillow,30,208.47
+358,Notebook,40,284.47
+604,Skirt,20,488.49
+582,Smartphone,10,289.97
+600,Pants,20,150.42
+202,Skirt,20,176.72
+715,Running Shoes,50,405.02
+871,Smartphone,10,84.89
+867,Carpet,30,308.4
+512,Headphones,10,312.87
+154,Smartphone,10,129.83
+448,Eraser,40,141.47
+143,Smartwatch,10,63.56
+284,Shirt,20,80.65
+350,Notebook,40,137.12
+267,Laptop,10,331.86
+737,Skirt,20,46.12
+969,Shirt,20,275.82
+218,Eraser,40,354.8
+877,Vase,30,96.94
+846,Soccer Ball,50,134.12
+825,T-shirt,20,125.64
+729,Yoga Mat,50,464.28
+435,T-shirt,20,74.46
+416,Soccer Ball,50,337.25
+780,Soccer Ball,50,203.93
+145,T-shirt,20,164.64
+161,Shirt,20,139.95
+618,Painting,30,413.52
+256,Painting,30,410.55
+281,Headphones,10,120.02
+396,Headphones,10,23.45
+862,Vase,30,57.84
+596,Pillow,30,199.31
+979,Vase,30,146.35
+273,Yoga Mat,50,182.39
+705,Smartwatch,10,393.49
+231,Skirt,20,276.11
+656,T-shirt,20,226.45
+391,Story Book,40,224.84
+413,Soccer Ball,50,433.67
+625,Headphones,10,427.65
+366,Eraser,40,79.8
+703,Yoga Mat,50,407.83
+676,Painting,30,355.4
+550,Vase,30,99.84
+753,Basketball,50,263.69
+524,Running Shoes,50,394.31
+307,Dress,20,39.18
+613,T-shirt,20,351.62
+321,Headphones,10,143.88
+834,Notebook,40,137.29
+476,Smartphone,10,234.56
+544,Laptop,10,457.44
+364,Eraser,40,195.85
+644,Blanket,30,157.56
+944,T-shirt,20,162.45
+795,T-shirt,20,463.07
+814,Painting,30,83.97

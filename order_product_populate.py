@@ -35,7 +35,7 @@ execute("TRUNCATE TABLE online_retail.order_product RESTART IDENTITY CASCADE;")
 # ------------------------
 # Load CSV
 # ------------------------
-orders_product_df = pd.read_csv("order_product.csv")
+orders_product_df = pd.read_csv("order_product2.csv")
 
 
 # ------------------------
