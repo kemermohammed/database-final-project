@@ -17,10 +17,12 @@ else:
 
 # Check duplicates
 print(f"Duplicate rows: {products_df.duplicated().sum()}")  
-#drop duplicates
-products_df = products_df.drop_duplicates(subset="product_id", keep="first")
-# check duplicates again
 
-# Save cleaned CSV
-products_df.to_csv("cleaned_products3.csv", index=False)
-print("Cleaned products CSV saved as cleaned_products.csv") 
+
+# Load cleaned products
+products_df = pd.read_csv("cleaned_products3.csv")
+valid_product_ids = products_df['product_id'].unique()
+
+# Filter order_product to include only valid product_ids
+order_product = df[df['product_id'].isin(valid_product_ids)][['order_id', 'product_id', 'quantity', 'price', 'review_score']]
+order_product.to_csv("order_product2.csv", index=False)

@@ -23,58 +23,27 @@ def execute(query):
 execute("CREATE SCHEMA IF NOT EXISTS online_retail;")
 execute("SET search_path = 'online_retail';")
 
-# --- Create tables ---
-execute("""
-CREATE TABLE IF NOT EXISTS customers (
-    customer_id   INT PRIMARY KEY,
-    city          VARCHAR(150) NOT NULL,
-    age           INT NOT NULL,
-    gender        VARCHAR(10)
-    
-);
-""")
+# --- Create product tables ---
 
-execute("""
-CREATE TABLE IF NOT EXISTS categories (
-    category_id INT PRIMARY KEY,
-    category_name VARCHAR(100) NOT NULL UNIQUE
-);
-""")
 
-execute("""
-CREATE TABLE IF NOT EXISTS products (
-    product_id INT PRIMARY KEY,
-    product_name VARCHAR(100) NOT NULL,
-    category_id INT REFERENCES categories(category_id),
-    price DECIMAL(10,2) NOT NULL CHECK (price >= 0)
-);
-""")
+
 execute("DROP TABLE IF EXISTS online_retail.orders CASCADE;")
 execute(
     """CREATE TABLE IF NOT EXISTS orders (
     
-    order_id SERIAL PRIMARY KEY,
+    order_id INT PRIMARY KEY,
     customer_id INT REFERENCES customers(customer_id),
     order_date DATE NOT NULL,
     payment_method VARCHAR(50),
     total_amount DECIMAL(10,2), CHECK (total_amount >= 0)
 );""")
 
-execute("DROP TABLE IF EXISTS online_retail.order_product CASCADE;")
-execute("""
-CREATE TABLE IF NOT EXISTS order_product (
-    order_product_id SERIAL PRIMARY KEY,
-    order_id INT REFERENCES orders(order_id),
-    product_id INT REFERENCES products(product_id),
-    quantity INT NOT NULL CHECK (quantity > 0),
-    price DECIMAL(10,2),
-    review_score INT
-);
-""")
 
 
 
-print("All tables created successfully!")
+
+
+print("Order created successfully!")
 
 
 df = pd.read_sql("SELECT * FROM online_retail.orders LIMIT 0;", engine)

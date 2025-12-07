@@ -1,5 +1,3 @@
-# CSV columns
-# customer_id, order_date, payment_method, total_amount
 import pandas as pd
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import IntegrityError
@@ -32,15 +30,30 @@ def execute(query):
 # ------------------------
 # Truncate table (optional, for fresh insert)
 # ------------------------
-execute("TRUNCATE TABLE online_retail.order_product RESTART IDENTITY CASCADE;")
+execute("TRUNCATE TABLE online_retail.orders RESTART IDENTITY CASCADE;")
 
-df = pd.read_csv("order_product2.csv")
+# ------------------------
+# Load CSV
+# ------------------------
+orders_df = pd.read_csv("orders_with_id.csv")
 
-df.to_sql(
-    "order_product",
+
+# ------------------------
+# Insert data
+# ------------------------
+#orders_df.drop(columns=['order_id'], inplace=True)  # let PostgreSQL handle the ID
+orders_df.to_sql(
+    "orders",
     engine,
+    schema="online_retail",
     if_exists="append",
-    index=False  # do NOT write the DataFrame index as a column
+    index=False
 )
 
-print("Order_product table populated successfully!")
+
+print("orders table populated successfully!")
+df = pd.read_sql("SELECT COUNT(*) AS total_rows FROM online_retail.orders;", engine)
+print("Total rows in products table:", df['total_rows'][0])
+
+df = pd.read_sql("SELECT * FROM online_retail.orders LIMIT 10;", engine)
+print(df)

@@ -30,20 +30,29 @@ def execute(query):
 # ------------------------
 # Truncate table (optional, for fresh insert)
 # ------------------------
-execute("TRUNCATE TABLE online_retail.orders RESTART IDENTITY CASCADE;")
+execute("TRUNCATE TABLE online_retail.order_product RESTART IDENTITY CASCADE;")
 
 # ------------------------
 # Load CSV
 # ------------------------
-orders_df = pd.read_csv("orders2.csv")
+orders_df = pd.read_csv("order_product2.csv")
 
+orders_df['review_score'] = orders_df['review_score'].replace(["Null", "NULL", "null"], None)
+# Convert review_score to integer (handle None or missing values)
+orders_df["review_score"] = (
+    orders_df["review_score"]
+    .replace("None", None)      # optional if "None" exists
+    .astype(float)              # convert "5.0" -> 5.0
+    .round()                    # round if needed
+    .astype("Int64")            # Pandas nullable integer
+)
 
 # ------------------------
 # Insert data
 # ------------------------
 #orders_df.drop(columns=['order_id'], inplace=True)  # let PostgreSQL handle the ID
 orders_df.to_sql(
-    "orders",
+    "order_product",
     engine,
     schema="online_retail",
     if_exists="append",
@@ -52,5 +61,8 @@ orders_df.to_sql(
 
 
 print("orders table populated successfully!")
-df = pd.read_sql("SELECT COUNT(*) AS total_rows FROM online_retail.orders;", engine)
+df = pd.read_sql("SELECT COUNT(*) AS total_rows FROM online_retail.order_product;", engine)
 print("Total rows in products table:", df['total_rows'][0])
+
+df = pd.read_sql("SELECT * FROM online_retail.order_product LIMIT 10;", engine)
+print(df)
